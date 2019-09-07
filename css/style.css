@@ -1,0 +1,109 @@
+	body {
+  padding: 0;
+  margin: 0;
+  font-family: OpenSans;
+  color: #efb8b8;
+  background: brown;
+  font-size: 18px
+}
+
+h2, p {
+  margin: 0;
+  margin-bottom: 10px
+}
+
+h2 {
+  font-size: 1.4rem
+}
+
+a, p {
+  font-size: 1rem
+}
+
+p {
+  line-height: 24px
+}
+
+a {
+  text-decoration: none;
+  color: #efb8b8;
+  position: relative;
+  margin: 0 2px;
+  transition: color .5s
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: calc(100% + 3px);
+  left: -3px;
+  top: -1.5px;
+  border-radius: 2px;
+  display: block;
+  background: rgba(239, 184, 184, .3);
+  transition: width .6s
+}
+
+a:hover {
+  color: #fff
+}
+
+a:hover:before {
+  width: calc(100% + 6px)
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.app__Title h2 span {
+  transition: color .3s
+}
+
+.app__Title p, h2 {
+  text-align: center
+}
+
+.app__Title p span {
+  display: inline-block;
+  transition: transform .3s, color .4s
+}
+
+.app__Title p span:hover {
+  transform: scale(2) rotate(360deg);
+  color: #8a2be2
+}
+
+.app__Footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 15px;
+  border-top: solid 1px rgba(239, 184, 184, .3)
+}
+
+.app__Footer a {
+  font-size: .8rem
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2");
+  font-weight: 400
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-SemiBold.woff2) format("woff2");
+  font-weight: 600
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2");
+  font-weight: 700
+}
